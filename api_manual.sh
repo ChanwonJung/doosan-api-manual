@@ -6,15 +6,14 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="${SCRIPT_DIR}"
 
 SRC_DIR="${ROOT_DIR}/source"        # Sphinx source (conf.py, index.rst, ...)
-OUT_DIR="${ROOT_DIR}/build/html"    # Build output directory
+OUT_DIR="${ROOT_DIR}/_site"
 PORT="${1:-8000}"                   # web server port (default: 8000)
 
-# Check if sphinx-build is available
-if ! command -v sphinx-build >/dev/null 2>&1; then
-  echo "[!] sphinx-build not found."
-  echo "    Install one of:"
-  echo "      sudo apt install python3-sphinx"
-  echo "      pip install sphinx sphinx_rtd_theme"
+# Check if sphinx_multiversion exists
+if ! python3 -m sphinx_multiversion --help >/dev/null 2>&1; then
+  echo "[!] sphinx_multiversion is not installed."
+  echo "    Install it with:"
+  echo "      pip install sphinx-multiversion"
   exit 1
 fi
 
@@ -24,11 +23,11 @@ rm -rf "${OUT_DIR}"
 
 # Build documentation
 echo "[*] Building documentation from ${SRC_DIR} ..."
-sphinx-build -b html "${SRC_DIR}" "${OUT_DIR}"
+python3 -m sphinx_multiversion "${SRC_DIR}" "${OUT_DIR}"
 
 # Serve documentation
 cd "${OUT_DIR}"
-URL="http://localhost:${PORT}/index.html"
+URL="http://localhost:${PORT}/main/index.html"
 
 echo ""
 echo "=============================================="

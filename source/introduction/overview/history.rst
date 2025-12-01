@@ -9,8 +9,10 @@
      - **Creation / Revision Pages and Contents**
      - **Revision Date**
 
-   * - 2.0
+   * - 1.33.1
      - Update API Manual to Sphinx Theme |br| |br|
+
+       Modify version information: GL013301 |br| |br|
 
        **Update Features**
 
@@ -21,7 +23,7 @@
 
        **Updated Functions**
        
-       - Added missing function
+       - Added missing functions
        - Added DH parameter function: ``get_robot_link_info``
 
        **Update Definition**

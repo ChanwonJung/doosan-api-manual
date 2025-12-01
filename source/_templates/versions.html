@@ -9,7 +9,7 @@
     </span>
 
     <div class="rst-other-versions">
-      {% set allowed = ['GL013300', 'GL013100'] %}
+      <!-- {% set allowed = ['main', 'GL013301'] %} -->
       {% set items = [] %}
       {% for b in versions.branches %}
         {% if b.name in allowed %}
@@ -18,7 +18,7 @@
       {% endfor %}
 
       {% set items = items|sort(attribute='name') %}
-      {% set items = (items|selectattr('name','equalto','GL013100')|list) + (items|rejectattr('name','equalto','GL013100')|list) %}
+      <!-- {% set items = (items|selectattr('name','equalto','GL013301')|list) + (items|rejectattr('name','equalto','GL013301')|list) %} -->
 
       {% if items %}
       <dl>

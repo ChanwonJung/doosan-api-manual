@@ -16,7 +16,7 @@ Auto Mode enables fully automated robot operation in which predefined tasks, DRL
 run without direct user control. Programs created in Task Builder or Task Writer can be verified in 
 Virtual Mode and executed on the real robot, and this mode supports preparation features such as tool-weight and weight-center measurement. |br|
 If required by a risk assessment, a 3-position Enable Switch must be configured through WCM > Robot > Safety I/O and kept in the center-enable position to permit Play, Start, Resume, or Servo On actions. |br|
-When the robot is in Auto Mode, the LED located at the robot's end displays a white color.
+When the robot is in Auto Mode, the LED indicator displays a white color.
 
 .. figure:: /tutorials/images/mode/auto_application.png
    :alt: auto_application

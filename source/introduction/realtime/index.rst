@@ -23,8 +23,8 @@ up to 1 kHz at a set period, and separately you can send servo control
 commands (servoj_rt, servol_rt, speedj_rt, speedl_rt, torque_rt).
 
 .. note::
-   While the RT channel supports high-speed communication up to 1 ms,
-   the standard TCP/IP API operates at a slower cycle: **50 ms on earlier version of the DRCF, and 20 ms on DRCF version 3.5 or later.**
+   While the RT channel supports high-speed communication up to 1 kHz,
+   the standard TCP/IP API operates at a slower cycle: **20 kHz on earlier version of the DRCF, and 50 kHz on DRCF version 3.5 or later.**
 
 .. toctree::
    :maxdepth: 2

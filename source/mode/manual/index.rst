@@ -14,7 +14,7 @@
 
 Manual Mode includes API functions that allow users to directly manipulate the robot  
 or interact with it through physical input devices. |br|
-When the robot is in Manual (Teach) Mode, the LED at the robot's end displays a blue color. |br|
+When the robot is in Manual (Teach) Mode, the LED indicator displays a blue color. |br|
 These functions are typically used together with the following interaction methods.
 
 **Teach Pendant-Based Operation**
