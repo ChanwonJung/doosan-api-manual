@@ -19,7 +19,8 @@ including both currently running and main program numbers.
      - ``_ErrorCode``
      - ``short``
      - -
-     - Response status (0 = success)
+     - Response status |br| 
+       (0: success)
    * - 2
      - ``_hHandle``
      - ``unsigned short``

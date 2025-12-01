@@ -40,7 +40,8 @@ and their corresponding modes for robot operation and diagnostics.
      - ``_iActualAT``
      - ``unsigned char[NUM_ANALOG]``
      - 0x00~0x01
-     - **Analog input mode** (per channel; e.g., 0: V, 1: I)
+     - **Analog input mode** |br| 
+       (per channel; e.g., 0: V, 1: I)
 
 Total size: 31 bytes
 

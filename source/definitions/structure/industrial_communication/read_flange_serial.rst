@@ -18,7 +18,7 @@ This is a structure information to check whether data that can be received exist
      - ``_bRecvFlag``
      - ``unsigned char``
      - 0~1
-     - **Data flag** |br|
+     - Data flag |br|
        (0: Non-receive, 1: Received)
 
 Total size: 1 byte

@@ -37,11 +37,11 @@ the internal variables of the program when it is executed in the robot controlle
    * - strName
      - string
      - -
-     - 128-byte variable name string.
+     - 128-byte variable name string
    * - strData
      - string
      - -
-     - 128-byte data string.
+     - 128-byte data string
 
 **Return**
 

@@ -22,8 +22,8 @@ such as automated assembly, insertion, or material handling.
 .. Note::
 
   - Typical stiffness range: |br|
-    - Translational: 0–20000 N/m |br| 
-    - Rotational: 0–400 N·m/rad  
+    - Translational: 0~20000 N/m |br| 
+    - Rotational: 0~400 N·m/rad  
   - Use ``COORDINATE_SYSTEM_TOOL`` for tool-aligned compliance or ``BASE`` for global compliance control.  
 
 **Example: Enable Cartesian Compliance for Automated Insertion**

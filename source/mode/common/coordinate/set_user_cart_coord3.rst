@@ -43,7 +43,7 @@ for persistence, register them in the Workcell configuration.
    * - fTargetVec
      - float[2][3]
      - -
-     - Two 3D vectors defining the coordinate orientation: |br|
+     - Two 3D vectors defining the coordinate orientation |br|
        - **Vector 1** → X-axis direction |br| 
        - **Vector 2** → Y-axis reference direction
    * - fTargetOrg

@@ -32,11 +32,12 @@ This function defines the **target force and torque** for each task-space axis, 
      - float[6]
      - -
      - Target forces and torques applied along the task-space axes: **[Fx, Fy, Fz, Mx, My, Mz]**. |br|
-       Units: **N** (translational) and **N·m** (rotational).
+       Units: N (translational) and N·m (rotational).
    * - iTargetDirection
      - unsigned char[6]
      - -
-     - Axis mask for control (**0**: ignore, **1**: active control). |br|
+     - Axis mask for control |br|
+       (**0**: ignore, **1**: active control). |br|
        Controls which axes respond to the commanded force.
    * - eForceReference
      - :ref:`COORDINATE_SYSTEM <enum_coordinate_system>`

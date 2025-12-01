@@ -20,13 +20,13 @@ It is used to set parameters for current and voltage channels in the welding int
      - ``_bTargetCh``
      - ``unsigned char``
      - 0~2
-     - **Welding channel index** |br|
+     - Welding channel index |br|
        (0: None, 1-2: Active channel)
    * - 1
      - ``_bTargetAT``
      - ``unsigned char``
      - 0 or 1
-     - **Analog signal type** |br|
+     - Analog signal type |br|
        (0: Current, 1: Voltage)
    * - 2
      - ``_ConstValue[2]``

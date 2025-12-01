@@ -36,7 +36,7 @@ It is used internally to track auxiliary signals and robot status in real time.
      - ``unsigned char[6]``
      - -
      - Brake state of each joint |br| 
-       0: Released, 1: Locked
+       (0: Released, 1: Locked)
    * - 26
      - ``_iActualBT``
      - ``unsigned int[5]``

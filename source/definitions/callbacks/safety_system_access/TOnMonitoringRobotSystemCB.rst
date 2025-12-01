@@ -37,7 +37,7 @@ you should avoid performing long or blocking operations (execution time should b
    * - eRobotSystem
      - :ref:`ROBOT_SYSTEM <enum_robot_system>`
      - -
-     - Indicates the current robot operation system (e.g., **REAL_ROBOT**, **VIRTUAL_ROBOT**, **SIMULATION**).
+     - Indicates the current robot operation system (e.g., REAL_ROBOT, VIRTUAL_ROBOT, SIMULATION).
 
 **Return** |br|
 None

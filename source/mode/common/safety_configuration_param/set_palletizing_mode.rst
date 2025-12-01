@@ -33,7 +33,7 @@ or stacking operations in palletizing applications.
    * - iMode
      - unsigned char
      - -
-     - Sets palletizing mode:  |br|
+     - **Sets palletizing mode**  |br|
        0: disable palletizing mode |br|  
        1: enable palletizing mode |br|
 

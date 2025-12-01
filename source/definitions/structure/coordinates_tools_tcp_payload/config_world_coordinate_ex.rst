@@ -21,7 +21,7 @@ adding data alignment bytes and a detailed orientation representation.
      - ``_iType``
      - ``unsigned char``
      - 0-2
-     - Coordinate mapping type and flag |br|
+     - **Coordinate mapping type and flag** |br|
        0: world→base |br|
        1: base→ref |br|
        2: world→ref  

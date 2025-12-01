@@ -20,8 +20,8 @@ It defines the data type, address, and value used for **GPR (General Purpose Reg
      - ``_iGprType``
      - ``unsigned char``
      - 0 / 1 / 2
-     - **GPR data type** |br|
-       0: bit, 1: int, 2: float
+     - GPR data type |br|
+       (0: bit, 1: int, 2: float)
    * - 1
      - ``_iGprAddr``
      - ``unsigned char``

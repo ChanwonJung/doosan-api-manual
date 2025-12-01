@@ -27,7 +27,7 @@ It allows users to verify whether a tool digital output pin is currently ON or O
    * - eGpioIndex
      - :ref:`GPIO_TOOL_DIGITAL_INDEX <enum_gpio_tool_digital_index>`
      - -
-     - Index of the tool-side digital output pin to read. 
+     - Index of the tool-side digital output pin to read
 
 **Return**
 

@@ -23,7 +23,7 @@ returning both the computed joint angles and the validity status of the solution
      - ``_iStatus``
      - ``int``
      - 0~2
-     - Availability status |br|
+     - **Availability status** |br|
        0: Normal return |br|
        1: Out of operation area |br|  
        2: Wrist axis singularity
@@ -46,6 +46,6 @@ Total size: 28 bytes
    - ``_fTargetPos`` contains the **joint-space solution** obtained from  
      the inverse kinematics calculation.
    - ``_iStatus`` indicates the **validity of the IK solution**: |br|
-     - ``0`` → Normal solution found |br|
-     - ``1`` → Out of operation area |br|
-     - ``2`` → Wrist singularity detected |br|
+     - ``0``: Normal solution found |br|
+     - ``1``: Out of operation area |br|
+     - ``2``: Wrist singularity detected |br|

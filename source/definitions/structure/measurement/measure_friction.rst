@@ -25,7 +25,7 @@ Used in friction identification or dynamic calibration processes of each robot j
      - ``_iSelect``
      - ``unsigned char[6]``
      - 0 or 1
-     - Joint selection flag  |br|
+     - **Joint selection flag** |br|
        0: excluded |br|
        1: included in measurement
    * - 7

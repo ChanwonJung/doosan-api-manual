@@ -17,12 +17,12 @@ This is a structure information to set multiple tcp names. It consists of the fo
      - ``_iToolCount``
      - ``int``
      - -
-     - Number of tool.
+     - Number of tool
    * - 4
      - ``_tTooList``
      - :ref:`CONFIG_TCP_SYMBOL[50] <struct_CONFIG_TCP_SYMBOL>`
      - -
-     - TCP name object list (Maximum 50).
+     - TCP name object list (Maximum 50)
 
 Total size: 2,804 bytes     
 

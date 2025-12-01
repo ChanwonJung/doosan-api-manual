@@ -19,7 +19,8 @@ It includes error information, communication handle, and detailed parameter data
      - ``_ErrorCode``
      - ``short``
      - -
-     - Response status code (0 = success, otherwise error)
+     - Response status code |br| 
+       (0: success, otherwise error)
    * - 2
      - ``_hHandle``
      - ``unsigned short``

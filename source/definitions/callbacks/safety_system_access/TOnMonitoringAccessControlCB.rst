@@ -37,7 +37,7 @@ you should avoid writing code that takes longer than **50 msec** to execute.
    * - eAccCtrl
      - :ref:`MONITORING_ACCESS_CONTROL <enum_monitoring_access_control>`
      - -
-     - Represents the access control event state (e.g., **REQUEST**, **PERMISSION**, **REJECTION**).
+     - Represents the access control event state (e.g., REQUEST, PERMISSION, REJECTION).
 
 **Return** |br|
 None

@@ -10,16 +10,32 @@ digital welding process over EtherNet/IP using the Doosan Robotics API:
 - execute a full DRL-based welding sequence
 - configure the welding interface and motion purely via C++ API and run a weave weld
 
+This example is located in the following path: |br|
+``API-DRFL/example/Linux_64/4_minimal_welding_sample.cpp``
+
+**See the example on the** `Doosan Robotics API-DRFL GitHub <https://github.com/DoosanRobotics/API-DRFL/blob/GL013300/example/Linux_64/4_minimal_welding_sample.cpp>`_.
+
+**Watch the full walk-through on the** `Doosan Robotics Official Youtube <https://www.youtube.com/watch?v=dL_1KRr5LDU>`_.
+
+.. raw:: html
+
+   <div style="text-align:center; margin: 1em 0;">
+     <iframe width="640" height="360"
+             src="https://www.youtube.com/embed/dL_1KRr5LDU"
+             title="Tutorial Video"
+             frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+             allowfullscreen>
+     </iframe>
+   </div>
+
+
 .. note::
 
   This sample is implemented for DRCF_VERSION 2.
   Welding-related APIs are not available yet when building with DRCF_VERSION 3.
   Support for welding under DRCF v3 will be provided in a future update.
 
-This example is located in the following path: |br|
-``API-DRFL/example/Linux_64/4_minimal_welding_sample.cpp``
-
-See the example on the `Doosan Robotics API-DRFL GitHub <https://github.com/DoosanRobotics/API-DRFL/blob/GL013300/example/Linux_64/4_minimal_welding_sample.cpp>`_.
 
 Setup & Global Variables
 ~~~~~~~~~~~~~~~~~~~~~~~~

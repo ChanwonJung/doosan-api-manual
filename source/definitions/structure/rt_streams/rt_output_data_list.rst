@@ -175,7 +175,8 @@ It contains comprehensive motion, torque, and I/O information of the robot.
      - ``controller_analog_input_type``
      - ``unsigned char[2]``
      - -
-     - Controller AI type (0: voltage, 1: current)
+     - Controller AI type |br|
+       (0: voltage, 1: current)
    * - 984
      - ``controller_analog_input``
      - ``float[2]``
@@ -185,7 +186,8 @@ It contains comprehensive motion, torque, and I/O information of the robot.
      - ``controller_analog_output_type``
      - ``unsigned char[2]``
      - -
-     - Controller AO type (0: voltage, 1: current)
+     - Controller AO type |br|
+       (0: voltage, 1: current)
    * - 994
      - ``controller_analog_output``
      - ``float[2]``
@@ -195,12 +197,14 @@ It contains comprehensive motion, torque, and I/O information of the robot.
      - ``flange_digital_input``
      - ``unsigned char``
      - -
-     - Flange DI (A-series: 2ch, M/H-series: 6ch)
+     - Flange DI |br|
+       (A-series: 2ch, M/H-series: 6ch)
    * - 1003
      - ``flange_digital_output``
      - ``unsigned char``
      - -
-     - Flange DO (A-series: 2ch, M/H-series: 6ch)
+     - Flange DO |br|
+       (A-series: 2ch, M/H-series: 6ch)
    * - 1004
      - ``flange_analog_input``
      - ``float[4]``
@@ -230,7 +234,8 @@ It contains comprehensive motion, torque, and I/O information of the robot.
      - ``robot_mode``
      - ``unsigned char``
      - 0~2
-     - Robot mode (0: Manual, 1: Auto, 2: Recovery)
+     - Robot mode |br|
+       (0: Manual, 1: Auto, 2: Recovery)
    * - 1079
      - ``robot_state``
      - ``unsigned char``

@@ -21,8 +21,7 @@ by including padding bytes for alignment and extended orientation handling.
      - ``_iTargetRef``
      - ``unsigned char``
      - -
-     - Reference coordinate system |br|  
-       0: Base, 2: World
+     - Base: 0 / World: 2 (Coordinate Reference)
    * - 1
      - ``_iReserved[3]``
      - ``unsigned char[3]``

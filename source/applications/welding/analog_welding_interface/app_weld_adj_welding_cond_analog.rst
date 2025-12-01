@@ -54,7 +54,7 @@ This allows further manual condition adjustment from the TP interface.
    * - bResetFlag
      - unsigned char
      - -
-     - **Reset flag**
+     - **Reset flag** |br|
        0: Apply new adjusted values |br|
        1: Restore values from :ref:`app_weld_set_weld_cond_analog <app_weld_set_weld_cond_analog>`
    * - fTargetVol

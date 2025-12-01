@@ -17,7 +17,7 @@ app_weld_set_interface_eip_m2r_process2
 
 This function configures the communication interface for using a welder that supports **EtherNet/IP communication**.  
 It defines the interlocking signals transmitted **from the welder to the robot controller**, specifically for **“Process 2” signals**.  
-This setup enables synchronization between the welding device’s execution states and the robot motion sequence.
+This setup enables synchronization between the welding device's execution states and the robot motion sequence.
 
 Refer to the communication signal datasheet of the corresponding welder for precise signal mapping details.
 
@@ -78,7 +78,7 @@ To properly use the EtherNet/IP-based welding function, all **8 interface setup 
      - unsigned char
      - -
      - Data digit representation |br|
-       (1:0, 0.1: 1, 0.01: 2)
+       (1: 0, 0.1: 1, 0.01: 2)
    * - _fMinData
      - float
      - -

@@ -31,9 +31,8 @@ It is used for conveyor calibration, tracking, and synchronization with the robo
      - ``_iTargetRef``
      - ``unsigned char``
      - 0 or 2
-     - **Reference coordinate system** |br|
-       0: Base frame |br|
-       2: World frame
+     - Reference coordinate system |br|
+       (0: Base frame, 2: World frame)
 
 Total size: 29 bytes
 

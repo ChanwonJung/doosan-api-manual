@@ -14,9 +14,9 @@
 
        **Update Features**
 
+       - Support for Ubuntu 24.04 Version
        - Added Tutorial (Chapter 6)
        - Added TroubleShooting (Chapter 7)
-       - Support for Ubuntu 24.04 Version
        - Restructing of the API navigation tree
 
        **Updated Functions**

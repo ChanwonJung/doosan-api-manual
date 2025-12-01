@@ -24,7 +24,7 @@ It aggregates the count and an array of Modbus registers.
      - ``_tRegister``
      - :ref:`MODBUS_REGISTER[] <struct_MODBUS_REGISTER>`
      - -
-     - Modbus I/O signal information array (each entry size = 34 bytes)
+     - Modbus I/O signal information array (each entry size: 34 bytes)
 
 Total size: 3402 bytes
 
@@ -39,8 +39,5 @@ Total size: 3402 bytes
    } MONITORING_MODBUS, *LPMONITORING_MODBUS;
 
 .. note::
-   - Each ``MODBUS_REGISTER`` occupies **(MAX_SYMBOL_SIZE + 2)** bytes.
-   - Example (legacy manual): if ``MAX_SYMBOL_SIZE = 32`` and ``MAX_MODBUS_TOTAL_REGISTERS = 100``,
-     then each register = **34 B**, so total size = **2 + 100×34 = 3402 B**.
    - The ``_iRegCount`` value (0..MAX_MODBUS_TOTAL_REGISTERS) indicates how many leading entries
      in ``_tRegister`` are valid.

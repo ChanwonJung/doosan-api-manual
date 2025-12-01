@@ -28,12 +28,12 @@ Each burst operation specifies a location, port count, and port data array.
      - ``_iCount``
      - ``unsigned short``
      - 0~16
-     - Number of GPIO ports included in this burst operation.
+     - Number of GPIO ports included in this burst operation
    * - 4
      - ``_tPort[MAX_DIGITAL_BURST_SIZE]``
      - :ref:`GPIO_PORT <struct_GPIO_PORT>`
      - -
-     - Array containing the configuration of each output port.
+     - Array containing the configuration of each output port
 
 Total size: 132 bytes
 

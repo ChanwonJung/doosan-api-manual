@@ -38,9 +38,9 @@ This command is **not available in the new flange version (v2).**
    * - nPort
      - int
      - -
-     - Serial port index:  
-       - `0` : x1  
-       - `1` : x2
+     - **Serial port index** |br|
+       0: x1 |br| 
+       1: x2
    * - eByteSize
      - :ref:`BYTE_SIZE <enum_byte_size>`
      - BYTE_SIZE_EIGHTBITS

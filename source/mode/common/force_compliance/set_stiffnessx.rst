@@ -31,7 +31,7 @@ The stiffness transitions linearly from the current value over the specified tim
    * - fTargetStiffness
      - float[6]
      - -
-     - Stiffness values for XYZ and Rx/Ry/Rz. |br|
+     - **Stiffness values for XYZ and Rx/Ry/Rz** |br|
        Range: 0-20000 N/m (translation), 0-400 N·m/rad (rotation). |br|
        Larger: stiffer motion |br|
        Smaller → more compliant

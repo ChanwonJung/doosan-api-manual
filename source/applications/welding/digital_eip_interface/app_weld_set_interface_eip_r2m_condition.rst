@@ -73,7 +73,7 @@ To fully utilize EtherNet/IP-based welding functionality, all 8 related interfac
      - unsigned char
      - None
      - Data digit |br|
-       (1:0, 0.1:1, 0.01:2)
+       (1: 0, 0.1: 1, 0.01: 2)
    * - _fMinData
      - float
      - None

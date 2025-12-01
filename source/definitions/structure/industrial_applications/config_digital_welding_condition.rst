@@ -21,7 +21,7 @@ It is used to configure a digital welding controller before execution.
      - ``unsigned char``
      - 0 or 1
      - Virtual mode flag |br|
-       (0: Real welding, 1: Virtual)
+       (0: Real, 1: Virtual)
    * - 1
      - ``_fTargetVel``
      - ``float``
@@ -41,11 +41,11 @@ It is used to configure a digital welding controller before execution.
      - ``_nWeldingMode`` ~ ``_nWMopt1``
      - ``unsigned int``
      - -
-     - **Mode options:** |br|
-       ``_nWeldingMode`` (Base process) |br|
-       ``_n2t2tSpecial`` (2T/2T special function) |br|
-       ``_nPulseMode`` (Pulse control) |br|
-       ``_nWMopt1`` (User-defined welding option)
+     - **Mode options** |br|
+       ``_nWeldingMode``: Base process |br|
+       ``_n2t2tSpecial``: 2T/2T special function |br|
+       ``_nPulseMode``: Pulse control |br|
+       ``_nWMopt1``: User-defined welding option
    * - 29
      - ``_cSimulation``
      - ``unsigned char``
@@ -66,7 +66,7 @@ It is used to configure a digital welding controller before execution.
      - ``_fWireFeedSpeed`` ~ ``_fDynamicCorrection``
      - ``float``
      - -
-     - **Core process values:** |br|
+     - **Core process values** |br|
        wire speed, arc length, dynamic response
    * - 52
      - ``_fOption1`` ~ ``_fOption15``

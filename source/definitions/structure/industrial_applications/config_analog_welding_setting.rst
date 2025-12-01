@@ -22,9 +22,8 @@ arc rise/fall times, and voltage transitions.
      - ``_iVirtualWelding``
      - ``unsigned char``
      - 0 or 1
-     - **Welding mode flag** |br|
-       0: Real Welding |br|
-       1: Virtual Welding
+     - Welding mode flag |br|
+       (0: Real, 1: Virtual)
    * - 1
      - ``_fTargetVoltage``
      - ``float``

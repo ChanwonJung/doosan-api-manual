@@ -26,7 +26,7 @@ is composed of the following fields when a robot controller needs to receive and
      - ``_iType``
      - ``unsigned char``
      - 0~3
-     - Expected input type |br|
+     - **Expected input type** |br|
        0: int, 1: float, 2: string, 3: bool
 
 Total size: 257 bytes

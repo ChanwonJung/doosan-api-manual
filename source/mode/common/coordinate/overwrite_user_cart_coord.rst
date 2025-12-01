@@ -39,7 +39,7 @@ This function is supported in **M2.5 version or higher**.
    * - bTargetUpdate
      - bool
      - -
-     - Determines whether the coordinate update is local or global. |br|
+     - **Determines whether the coordinate update is local or global** |br|
        0: Local update (temporary; program-only)  |br|
        1: Global update (synchronized with Teach Pendant)
    * - iReqId

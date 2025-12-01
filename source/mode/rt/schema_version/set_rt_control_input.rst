@@ -28,12 +28,12 @@ It defines the version, update period, and loss tolerance used for UDP-based inp
    * - strVersion
      - string
      - -
-     - Input data version to be used for RT streaming (e.g., `"v1.0"`).
+     - Input data version to be used for RT streaming (e.g., `"v1.0"`)
    * - fPeriod
      - float
      - -
-     - Communication period in seconds.  
-       Valid range: **0.001 ~ 1.0 [s]** (1 kHz ~ 1 Hz update rate).
+     - Communication period in seconds. |br|
+       Valid range: **0.001 ~ 1.0 [s]** (1 kHz ~ 1 Hz update rate)
    * - nLossCnt
      - int
      - -

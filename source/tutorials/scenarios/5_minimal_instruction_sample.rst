@@ -18,7 +18,22 @@ one by one and observe how the API behaves in real time.
 This example is located in the following path: |br|
 ``API-DRFL/example/Linux_64/5_minimal_instruction_sample.cpp``
 
-See the example on the `Doosan Robotics API-DRFL GitHub <https://github.com/DoosanRobotics/API-DRFL/blob/GL013300/example/Linux_64/5_minimal_instruction_sample.cpp>`_.
+**See the example on the** `Doosan Robotics API-DRFL GitHub <https://github.com/DoosanRobotics/API-DRFL/blob/GL013300/example/Linux_64/5_minimal_instruction_sample.cpp>`_.
+
+**Watch the full walk-through on the** `Doosan Robotics Official Youtube <https://www.youtube.com/watch?v=tADMjcAb92A>`_.
+
+.. raw:: html
+
+   <div style="text-align:center; margin: 1em 0;">
+     <iframe width="640" height="360"
+             src="https://www.youtube.com/embed/tADMjcAb92A"
+             title="Tutorial Video"
+             frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+             allowfullscreen>
+     </iframe>
+   </div>
+
 
 Setup & Global Variables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

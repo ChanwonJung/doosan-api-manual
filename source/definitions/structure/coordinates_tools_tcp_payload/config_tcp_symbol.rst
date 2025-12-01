@@ -19,12 +19,12 @@ to its detailed configuration parameters.
      - ``_szSymbol``
      - ``char[32]``
      - -
-     - 32-byte identifier for the TCP name.
+     - 32-byte identifier for the TCP name
    * - 32
      - ``_tTCP``
      - :ref:`CONFIG_TCP <struct_CONFIG_TCP>`
      - -
-     - TCP configuration object containing position and orientation offsets.
+     - TCP configuration object containing position and orientation offsets
 
 Total size: 56 bytes
 

@@ -15,8 +15,8 @@ to verify **alignment**, **approach distance**, or **safety constraints** before
 - Monitor relative or absolute **position offsets** for **approach validation** or **contact detection**.  
 - Use within ``while`` or ``if`` statements to create **looped condition checks** during teaching.  
 - Switch between **absolute (global)** and **relative (offset)** comparisons using ``eMode``: |br| 
-  - ``MOVE_MODE_ABSOLUTE`` — compare absolute position within workspace. |br| 
-  - ``MOVE_MODE_RELATIVE`` — compare deviation from target pose. |br|
+  - ``MOVE_MODE_ABSOLUTE``: compare absolute position within workspace. |br| 
+  - ``MOVE_MODE_RELATIVE``: compare deviation from target pose. |br|
 
 .. Note::
 

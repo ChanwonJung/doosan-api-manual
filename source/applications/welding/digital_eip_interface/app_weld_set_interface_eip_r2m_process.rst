@@ -89,15 +89,18 @@ have the following sub-parameters:
    * - _bEnable
      - unsigned char
      - None
-     - Enable flag (0 = Disabled, 1 = Enabled)
+     - Enable flag |br|
+       (0: Disabled, 1: Enabled)
    * - _nDataType
      - unsigned char
      - None
-     - Data type (0 = off/on, 1 = selection, 2 = value)
+     - Data type |br| 
+       (0: off/on, 1: selection, 2: value)
    * - _nPositionalNumber
      - unsigned char
      - None
-     - Data position index (1=0, 0.1 = 1, 0.01 = 2)
+     - Data position index |br|
+       (1: 0, 0.1: 1, 0.01: 2)
    * - _fMinData
      - float
      - None
@@ -117,7 +120,7 @@ have the following sub-parameters:
    * - _nCommDataType
      - unsigned char
      - None
-     - Communication data size |br|
+     - **Communication data size** |br|
        0: 1-bit(Disable Low) |br|
        1: 1-bit(Disable High) |br|
        2: 2-bit |br|

@@ -34,10 +34,10 @@ This is a function for executing the control of jog movement for each axis of th
    * - fVelocity
      - float
      - -
-     - Jog Velocity (**% Unit**) |br|
-       **+:** Positive Direction |br|
-       **0:** Stop |br|
-       **-:** Negative Direction
+     - **Jog Velocity** |br|
+       +: Positive Direction |br|
+       0: Stop |br|
+       -: Negative Direction
 
 **Return**
 

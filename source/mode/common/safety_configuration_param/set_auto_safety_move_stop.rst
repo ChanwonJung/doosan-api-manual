@@ -32,9 +32,9 @@ where unexpected contact or area entry should immediately interrupt robot motion
    * - bFuncEnable
      - bool
      - -
-     - Option for enabling automatic motion stop:  |br|
-       - true (1): Enable automatic stop on safety events  |br|
-       - false (0): Disable (manual stop control only)
+     - **Option for enabling automatic motion stop**  |br|
+       true (1): Enable automatic stop on safety events  |br|
+       false (0): Disable (manual stop control only)
 
 **Return**
 

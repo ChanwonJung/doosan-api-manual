@@ -28,7 +28,7 @@ This command is **not available in the new flange version (v2).**
    * - nPort
      - int
      - -
-     - Serial port index: |br|
+     - **Serial port index** |br|
        0: x1 |br|
        1: x2
 

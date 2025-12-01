@@ -19,7 +19,8 @@ It reports the on/off status of each cockpit button connected to the robot contr
      - ``_iActualBS``
      - ``unsigned char[6]``
      - -
-     - Cockpit digital button states |br| 0: Off, 1: On
+     - Cockpit digital button states |br| 
+       (0: Off, 1: On)
 
 Total size: 6 bytes
 

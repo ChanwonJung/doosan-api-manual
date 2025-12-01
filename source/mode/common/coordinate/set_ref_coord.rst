@@ -33,7 +33,6 @@ to ensure positional accuracy during complex motion planning.
      - :ref:`COORDINATE_SYSTEM <enum_coordinate_system>`
      - COORDINATE_SYSTEM_BASE
      - The reference coordinate system to set. |br| 
-       Common values include:  |br|
        - `COORDINATE_SYSTEM_BASE` : Robot base frame  |br|
        - `COORDINATE_SYSTEM_TOOL` : Current tool frame  |br|
        - `COORDINATE_SYSTEM_USER` : User-defined coordinate frame

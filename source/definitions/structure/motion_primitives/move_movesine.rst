@@ -20,12 +20,14 @@ in either the **base** or **tool** coordinate frame.
      - ``_iTargetAxs``
      - ``unsigned char``
      - 0~2
-     - Target axis (0: X, 1: Y, 2: Z)
+     - Target axis |br| 
+       (0: X, 1: Y, 2: Z)
    * - 1
      - ``_iTargetRef``
      - ``unsigned char``
      - 0~1
-     - Reference coordinate (0: Base, 1: Tool)
+     - Reference coordinate |br| 
+       (0: Base, 1: Tool)
    * - 2
      - ``_fTargetAcc``
      - ``float``

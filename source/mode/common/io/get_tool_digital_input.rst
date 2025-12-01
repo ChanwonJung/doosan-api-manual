@@ -27,7 +27,7 @@ It is mainly used to detect external signals from sensors or switches attached t
    * - eGpioIndex
      - :ref:`GPIO_TOOL_DIGITAL_INDEX <enum_gpio_tool_digital_index>` 
      - -
-     - Index of the tool-side digital input pin.
+     - Index of the tool-side digital input pin
 
 **Return**
 

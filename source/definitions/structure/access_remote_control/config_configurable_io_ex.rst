@@ -20,7 +20,7 @@ It allows more fine-grained control over I/O logic states and safety signals.
      - ``_iIO``
      - ``unsigned char[TYPE_LAST][NUM_DIGITAL * 2]``
      - -
-     - Mapping of configurable Safety I/O ports. 
+     - Mapping of configurable Safety I/O ports
    * - 2
      - ``_bLevel``
      - ``unsigned char[TYPE_LAST][NUM_DIGITAL]``

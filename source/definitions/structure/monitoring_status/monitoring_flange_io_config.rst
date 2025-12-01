@@ -49,22 +49,26 @@ including analog/digital pin multiplexing, serial port settings, and safety mode
      - ``_iFAI0Mode``
      - ``unsigned char``
      - -
-     - Analog Input 0 mode (0: voltage, 1: current)
+     - Analog Input 0 mode |br| 
+       (0: voltage, 1: current)
    * - 22
      - ``_iFAI1Mode``
      - ``unsigned char``
      - -
-     - Analog Input 1 mode (0: voltage, 1: current)
+     - Analog Input 1 mode |br| 
+       (0: voltage, 1: current)
    * - 23
      - ``_iFAI2Mode``
      - ``unsigned char``
      - -
-     - Analog Input 2 mode (0: voltage, 1: current)
+     - Analog Input 2 mode |br| 
+       (0: voltage, 1: current)
    * - 24
      - ``_iFAI3Mode``
      - ``unsigned char``
      - -
-     - Analog Input 3 mode (0: voltage, 1: current)
+     - Analog Input 3 mode |br| 
+       (0: voltage, 1: current)
    * - 25
      - ``_szX1Baudrate``
      - ``unsigned char[7]``
@@ -74,12 +78,14 @@ including analog/digital pin multiplexing, serial port settings, and safety mode
      - ``_szX1DataLength``
      - ``unsigned char``
      - 0~7
-     - X1 Serial data bit length (0: 1bit, 7: 8bit)
+     - X1 Serial data bit length |br| 
+       (0: 1bit, 7: 8bit)
    * - 33
      - ``_szX1Parity``
      - ``unsigned char``
      - 0x00~0x02
-     - X1 Serial parity (0: None, 1: Odd, 2: Even)
+     - X1 Serial parity  |br| 
+       (0: None, 1: Odd, 2: Even)
    * - 34
      - ``_szX1StopBit``
      - ``unsigned char``
@@ -94,12 +100,14 @@ including analog/digital pin multiplexing, serial port settings, and safety mode
      - ``_szX2DataLength``
      - ``unsigned char``
      - 0~7
-     - X2 Serial data bit length (0: 1bit, 7: 8bit)
+     - X2 Serial data bit length |br|
+       (0: 1bit, 7: 8bit)
    * - 43
      - ``_szX2Parity``
      - ``unsigned char``
      - 0x00~0x02
-     - X2 Serial parity (0: None, 1: Odd, 2: Even)
+     - X2 Serial parity |br| 
+       (0: None, 1: Odd, 2: Even)
    * - 44
      - ``_szX2StopBit``
      - ``unsigned char``

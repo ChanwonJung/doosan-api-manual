@@ -18,18 +18,18 @@ This is a structure for setting waypoint information when moveb motion is contro
      - ``_fTargetPos``
      - ``float[2][NUM_TASK]``
      - -
-     - Location Information (#1, #2) — information on six task spaces
+     - Location Information (#1, #2): information on six task spaces
    * - 48
      - ``_iBlendType``
      - ``unsigned char``
      - 0x00~0x01
      - Motion Type (combination of first and second motion) |br|
-       0: Line, 1: Circle
+       (0: Line, 1: Circle)
    * - 49
      - ``_fBlendRad``
      - ``float``
      - -
-     - Curve Curvature — radius information (mm)
+     - Curve Curvature: radius information (mm)
 
 Total size: 53 bytes
 

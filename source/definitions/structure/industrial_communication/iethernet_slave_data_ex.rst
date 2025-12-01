@@ -19,8 +19,8 @@ It specifies the GPR (General Purpose Register) data type, address, and the dire
      - ``_iGprType``
      - ``unsigned char``
      - 0 / 1 / 2
-     - **GPR data type** |br|
-       0: bit, 1: int, 2: float
+     - GPR data type |br|
+       (0: bit, 1: int, 2: float)
    * - 1
      - ``_iGprAddr``
      - ``unsigned char``
@@ -30,8 +30,8 @@ It specifies the GPR (General Purpose Register) data type, address, and the dire
      - ``_iInOut``
      - ``unsigned char``
      - 0 / 1
-     - **Data direction** |br|
-       0: Input, 1: Output
+     - Data direction |br|
+       (0: Input, 1: Output)
 
 Total size: 3 bytes
 

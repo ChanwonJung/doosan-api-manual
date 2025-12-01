@@ -25,16 +25,14 @@ and the tracking duration information.
      - ``_bTracking``
      - ``unsigned char``
      - 0 or 1
-     - **Tracking state flag** |br|
-       0: Untracking |br|
-       1: Tracking active
+     - Tracking state flag |br|
+       (0: Untracking, 1: Tracking active)
    * - 2
      - ``_bMate``
      - ``unsigned char``
      - 0 or 1
-     - **Synchronization (“mate”) flag** |br|
-       0: Not mated |br| 
-       1: Mated
+     - Synchronization (“mate”) flag |br|
+       (0: Not mated, 1: Mated)
    * - 3
      - ``_fDuration``
      - ``float``

@@ -33,7 +33,7 @@ The port parameter is **only available in the new flange version (v2).**
    * - nPort
      - int
      - 1
-     - Port number for flange serial interface. |br|
+     - **Port number for flange serial interface** |br|
        1: X1 |br|  
        2: X2 (supported only on M/H models)
 

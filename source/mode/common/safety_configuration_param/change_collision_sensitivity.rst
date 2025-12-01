@@ -29,8 +29,8 @@ while a lower value allows for greater tolerance before triggering a collision s
    * - fSensitivity
      - float
      - -
-     - Collision sensitivity level (range: **0–100**) |br|
-       0: Minimum sensitivity (less reactive)  |br|
+     - **Collision sensitivity level** (range: 0~100) |br|
+       0: Minimum sensitivity (less reactive) |br|
        100: Maximum sensitivity (most reactive)
 
 **Return**

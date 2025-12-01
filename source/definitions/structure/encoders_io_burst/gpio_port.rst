@@ -22,13 +22,13 @@ It is primarily used as an element within burst operations such as
      - ``_iIndex``
      - ``unsigned char``
      - 0 ~ N
-     - Index number of the GPIO port. |br|
-       Specifies which port this entry refers to.
+     - Index number of the GPIO port |br|
+       Specifies which port this entry refers to
    * - 1
      - ``_fValue``
      - ``float``
      - 0.0 or 1.0
-     - Current port value or output state. |br| 
+     - **Current port value or output state** |br| 
        0.0: Low (OFF) |br|
        1.0: High (ON)
 

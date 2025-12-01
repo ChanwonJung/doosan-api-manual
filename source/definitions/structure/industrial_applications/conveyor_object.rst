@@ -30,9 +30,8 @@ It is primarily used in robot–conveyor coordination for pick & place operation
      - ``_iContainerType``
      - ``unsigned char``
      - 0~1
-     - **Container organization type** |br|
-       0: FIFO |br|
-       1: LIFO
+     - Container organization type |br|
+       (0: FIFO, 1: LIFO)
    * - 6
      - ``_tPosObjCoord``
      - :ref:`POSITION <struct_POSITION>`

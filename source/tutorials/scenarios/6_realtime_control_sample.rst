@@ -26,7 +26,35 @@ to execute **real-time (RT) control** of the robot using.
 This example is located in the following path: |br|
 ``API-DRFL/example/Linux_64/6_realtime_control_sample.cpp``
 
-See the example on the `Doosan Robotics API-DRFL GitHub <https://github.com/DoosanRobotics/API-DRFL/blob/GL013300/example/Linux_64/6_realtime_control_sample.cpp>`_.
+**See the example on the** `Doosan Robotics API-DRFL GitHub <https://github.com/DoosanRobotics/API-DRFL/blob/GL013300/example/Linux_64/6_realtime_control_sample.cpp>`_.
+
+**Watch the full walk-through on the** `Doosan Robotics Official Youtube <https://www.youtube.com/watch?v=T78w1Qu3Fcw>`_.
+
+.. raw:: html
+
+   <div style="text-align:center; margin: 1em 0;">
+     <iframe width="640" height="360"
+             src="https://www.youtube.com/embed/T78w1Qu3Fcw"
+             title="Realtime control sample tutorial"
+             frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+             allowfullscreen>
+     </iframe>
+   </div>
+
+**Watch the real robot run on the** `Doosan Robotics Official Youtube <https://www.youtube.com/watch?v=_uWBy-vuZMk>`_.
+
+.. raw:: html
+
+    <div style="text-align:center; margin: 1em 0;">
+      <iframe width="640" height="360"
+              src="https://www.youtube.com/embed/_uWBy-vuZMk"
+              title="6_realtime_control_sample real robot execution"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+      </iframe>
+    </div>
 
 
 Setup & Global Variables

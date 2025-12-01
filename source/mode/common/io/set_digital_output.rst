@@ -46,9 +46,9 @@ Refer to the controller firmware version in :ref:`get_library_version <get_libra
    * - bOnOff
      - bool
      - -
-     - Output state value: |br|
-       - `true (1)` : ON — output high signal |br| 
-       - `false (0)` : OFF — output low signal
+     - **Output state value** |br|
+       `true (1)` : ON — output high signal |br| 
+       `false (0)` : OFF — output low signal
 
 **Return**
 

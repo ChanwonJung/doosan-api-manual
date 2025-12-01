@@ -20,7 +20,8 @@ It specifies the update targets, network type, server information, and file name
      - ``unsigned char[UPDATE_TARGET_LAST]``
      - -
      - **Update target flag array** |br|
-       0: non-update, 1: update |br|  
+       0: non-update |br|
+       1: update |br|  
        The number of elements is defined by ``UPDATE_TARGET_LAST``.
    * - 10
      - ``_iNetType``

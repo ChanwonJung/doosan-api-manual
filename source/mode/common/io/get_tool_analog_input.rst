@@ -30,7 +30,7 @@ For M/H series models, additional channels (3 and 4) are supported.
    * - nCh
      - int
      - -
-     - Analog input channel number |br|
+     - **Analog input channel number** |br|
        1: Channel, 2: Channel 2 |br| 
        3: Channel 3 (M/H models only) |br|
        4: Channel 4 (M/H models only)

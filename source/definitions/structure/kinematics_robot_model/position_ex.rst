@@ -33,7 +33,7 @@ solution space, and multi-turn information for advanced kinematic representation
      - ``_posx._ori_type``
      - ``unsigned char``
      - 0-5
-     - Orientation type |br|
+     - **Orientation type** |br|
        0: Euler ZYZ, 1: Euler ZYX, 2: Euler XYZ |br|
        3: Fixed XYZ, 4: Axis-Angle, 5: Quaternion 
    * - 25
@@ -41,7 +41,7 @@ solution space, and multi-turn information for advanced kinematic representation
      - ``unsigned char``
      - 0-7, 255
      - Solution space configuration |br| 
-       0-7: fixed, 255: automatic
+       (0-7: fixed, 255: automatic)
    * - 26
      - ``_posx._multi_turn``
      - ``unsigned char``
@@ -52,7 +52,7 @@ solution space, and multi-turn information for advanced kinematic representation
      - ``unsigned char``
      - -
      - Position type indicator |br|  
-       0: posx, 1: posj
+       (0: posx, 1: posj)
 
 Total size: 28 bytes
 

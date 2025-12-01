@@ -20,7 +20,8 @@ It is mainly used to observe **compliance / force control behavior** and the cur
      - ``_iActualBS``
      - ``unsigned char[NUMBER_OF_BUTTON]``
      - -
-     - Digital button states (0: off, 1: on)
+     - Digital button states |br|
+       (0: off, 1: on)
    * - 6
      - ``_fActualCS``
      - ``float[NUMBER_OF_JOINT]``
@@ -41,13 +42,13 @@ It is mainly used to observe **compliance / force control behavior** and the cur
      - ``unsigned char[NUMBER_OF_JOINT]``
      - 0-2
      - Force control mode per joint |br|
-       0: Compliance, 1: Force, 2: None
+       (0: Compliance, 1: Force, 2: None)
    * - 64
      - ``_iReferenceCoord``
      - ``unsigned char``
      - 0-120
      - Reference coordinate |br|
-       0: Base, 1: Tool, 2: World, 101-120: User
+       (0: Base, 1: Tool, 2: World, 101-120: User)
    * - 65
      - ``_iAutoAccMode``
      - ``unsigned char``
@@ -67,7 +68,8 @@ It is mainly used to observe **compliance / force control behavior** and the cur
      - ``_isMoving``
      - ``unsigned char``
      - -
-     - Robot moving status (0: stopped, 1: moving)
+     - Robot moving status |br|
+       (0: stopped, 1: moving)
    * - 92
      - ``_iOperationSpeed``
      - ``unsigned char``

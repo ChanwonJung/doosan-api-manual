@@ -31,8 +31,9 @@ For **M/H series** models, up to **4 channels** are supported.
    * - nCh
      - int
      - -
-     - Analog input channel number |br|
-       1: Channel 1, 2: Channel 2  |br|
+     - **Analog input channel number** |br|
+       1: Channel 1 |br|
+       2: Channel 2 |br|
        3: Channel 3 (M/H models only) |br| 
        4: Channel 4 (M/H models only)
    * - eAnalogType

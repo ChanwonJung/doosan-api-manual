@@ -21,7 +21,7 @@ this version supports **multiple ports** (e.g., ``X1``, ``X2``).
      - ``_bRecvFlag[2]``
      - ``unsigned char[2]``
      - 0~1
-     - **Data receive flag for each port** |br| 
+     - Data receive flag for each port |br| 
        (0: Non-receive, 1: Received)
 
 

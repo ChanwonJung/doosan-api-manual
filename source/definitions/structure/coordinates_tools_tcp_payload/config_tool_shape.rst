@@ -18,8 +18,8 @@ This is a structure information to set the tool shape, and consists of the follo
      - ``_iValidity``
      - ``unsigned char[5]``
      - -
-     - Validity flag for each safety object: |br|  
-       0: Invalid, 1: Valid  
+     - Validity flag for each safety object |br|  
+       (0: Invalid, 1: Valid)  
    * - 5
      - ``_tShape``
      - :ref:`SAFETY_OBJECT[5] <struct_SAFETY_OBJECT>`

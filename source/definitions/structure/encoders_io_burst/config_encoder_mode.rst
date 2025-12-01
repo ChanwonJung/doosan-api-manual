@@ -49,7 +49,8 @@ This is mainly used when setting up **external encoders** or **conveyor tracking
      - ``_iInvMode``
      - ``unsigned char``
      - 0 or 1
-     - Inversion mode (0: Forward, 1: Inversed)
+     - Inversion mode |br|
+       (0: Forward, 1: Inversed)
    * - 8
      - ``_nPulseAZ``
      - ``unsigned int``

@@ -28,13 +28,13 @@ such as grippers, valves, or end-effector sensors.
    * - eGpioIndex
      - :ref:`GPIO_TOOL_DIGITAL_INDEX <enum_gpio_tool_digital_index>`
      - -
-     - Index of the tool-side digital output pin.
+     - Index of the tool-side digital output pin
    * - bOnOff
      - bool
      - -
-     - Data to output. |br|
-       1: **ON** (set high) |br|
-       0: **OFF** (set low)
+     - **Data to output** |br|
+       1: ON (set high) |br|
+       0: OFF (set low)
 
 **Return**
 

@@ -57,7 +57,7 @@ It is particularly useful for tasks where the workpiece mass changes dynamically
    * - eAddUp
      - :ref:`ADD_UP <enum_add_up>`
      - ADD_UP_REPLACE
-     - Behavior when updating workpiece info:  |br|
+     - **Behavior when updating workpiece info** |br|
        DR_REPLACE(0): Replace existing workpiece |br|  
        DR_ADD(1): Add workpiece data  |br|
        DR_REMOVE(2): Remove existing workpiece

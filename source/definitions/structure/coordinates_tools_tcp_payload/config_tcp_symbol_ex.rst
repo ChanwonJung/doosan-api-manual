@@ -27,7 +27,7 @@ It is an extended version of :ref:`CONFIG_TCP_SYMBOL <struct_CONFIG_TCP_SYMBOL>`
      - :ref:`CONFIG_TCP_EX <struct_POSITION_EX>`
      - -
      - TCP configuration data containing position, orientation type, |br|
-       solution space, and multi-turn flags.
+       solution space, and multi-turn flags
 
 Total size: 105 bytes
 

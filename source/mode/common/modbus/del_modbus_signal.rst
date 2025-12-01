@@ -28,7 +28,7 @@ registered in the robot controller in advance.
    * - strSymbol
      - string
      - -
-     - Name of the registered Modbus signal to delete.
+     - Name of the registered Modbus signal to delete
 
 **Return**
 

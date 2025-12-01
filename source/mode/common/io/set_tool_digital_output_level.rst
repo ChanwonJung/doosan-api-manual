@@ -30,8 +30,7 @@ This function is available **only on the new flange version (v2)**.
    * - nLv
      - int
      - 12
-     - The **voltage level** to be output to the tool digital output port. |br| 
-       Supported values:  |br|
+     - **The voltage level to be output to the tool digital output port** |br| 
        0: Output disabled |br|  
        12: 12 V output |br|
        24: 24 V output |br| 

@@ -3,7 +3,7 @@
 calc_coord
 ------------------------------------------
 This function computes a **new user Cartesian coordinate system** by using up to 4 input poses  
-(`fTargetPos1`–`fTargetPos4`) and an input mode (`nInputMode`).  
+(`fTargetPos1`-`fTargetPos4`) and an input mode (`nInputMode`).  
 The reference system is defined by `eTargetRef`.  
 This feature is available in controller firmware **M2.5 or higher**.
 
@@ -47,13 +47,13 @@ the X-, Y-, and Z-axis directions as follows:
    * - nCnt
      - unsigned short
      - -
-     - Number of input task poses (1–4).
+     - Number of input task poses (1-4).
    * - nInputMode
      - unsigned short
      - -
-     - Mode selector (valid only when `nCnt = 2`). |br|
+     - **Mode selector (valid only when `nCnt = 2`)** |br|
        0: Z-axis defined by current tool direction  |br|
-       1: Z-axis defined by X1’s Z direction
+       1: Z-axis defined by X1's Z direction
    * - eTargetRef
      - :ref:`COORDINATE_SYSTEM <enum_coordinate_system>`
      - COORDINATE_SYSTEM_BASE

@@ -21,13 +21,13 @@ to map logical functions to specific digital I/O channels.
      - ``_iPort``
      - ``char``
      - -1 ~ 15
-     - Digital port number assigned to this I/O function. |br|
+     - Digital port number assigned to this I/O function |br|
        (-1: Not used, 0-15: Active port index)
    * - 1
      - ``_bLevel``
      - ``char``
      - 0 or 1
-     - Active signal level for the port. |br|
+     - Active signal level for the port |br|
        (0: Low active, 1: High active)
 
 Total size: 2 bytes

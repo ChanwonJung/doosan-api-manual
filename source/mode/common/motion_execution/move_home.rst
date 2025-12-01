@@ -33,7 +33,7 @@ and ensures all axes are synchronized for subsequent motion commands.
    * - bRun
      - unsigned char
      - 1
-     - Motion execution flag. |br|
+     - **Motion execution flag** |br|
        0: Stop, 1:Motion (Execute homing)
 
 **Return**

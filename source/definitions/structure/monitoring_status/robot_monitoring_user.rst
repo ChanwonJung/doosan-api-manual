@@ -26,12 +26,14 @@ and the 3×3 orientation rotation matrix.
      - ``_iParent``
      - ``unsigned char``
      - 0 or 2
-     - Parent frame |br| 0: Base frame, 2: World frame.
+     - Parent frame |br| 
+       (0: Base frame, 2: World frame)
    * - 2
      - ``_fActualPos``
      - ``float[2][6]``
      - -
-     - Position actual values (0: tool frame, 1: flange frame).
+     - Position actual values |br|
+       (0: tool frame, 1: flange frame)
    * - 50
      - ``_fActualVel``
      - ``float[6]``

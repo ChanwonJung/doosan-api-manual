@@ -19,17 +19,17 @@ It is typically used to register or modify a user coordinate in the robot contro
      - ``_iTargetRef``
      - ``unsigned char``
      - -
-     - Coordinate reference (0: base, 2: world).
+     - Base: 0 / World: 2 (Coordinate Reference)
    * - 1
      - ``_fTargetPos``
      - ``float[NUMBER_OF_JOINT]``
      - -
-     - Target position in task coordinates.
+     - Target position in task coordinates
    * - 25
      - ``_iUserID``
      - ``unsigned char``
      - -
-     - Unified user coordinate ID.
+     - Unified user coordinate ID
 
 Total size: 26 bytes
 

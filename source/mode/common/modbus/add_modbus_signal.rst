@@ -43,32 +43,32 @@ it can be reused, as it is added in the initialization process.
    * - strSymbol
      - string
      - -
-     - Modbus signal name.
+     - Modbus signal name
    * - strIpAddress
      - string
      - -
-     - Modbus module IP address.
+     - Modbus module IP address
    * - nPort
      - unsigned short
      - -
-     - Modbus module port number.
+     - Modbus module port number
    * - eRegType
      - :ref:`MODBUS_REGISTER_TYPE <enum_modbus_register_type>`
      - -
-     - Modbus register type definitions.
+     - Modbus register type definitions
    * - iRegIndex
      - unsigned short
      - -
-     - Index of the Modbus register to access.
+     - Index of the Modbus register to access
    * - nRegValue
      - unsigned short
      - 0
      - Output value when the type is ``MODBUS_REGISTER_TYPE_COILS`` or ``MODBUS_REGISTER_TYPE_HOLDING_REGISTER``  
-       (ignored for other types).
+       (ignored for other types)
    * - nSlaiveId
      - unsigned char
      - 255
-     - Slave ID of the target Modbus device (default: broadcast).
+     - Slave ID of the target Modbus device (default: broadcast)
 
 **Return**
 

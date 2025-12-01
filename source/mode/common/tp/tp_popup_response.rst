@@ -28,7 +28,7 @@ based on the user's response to a popup message that appeared during DRL program
    * - eRes
      - :ref:`POPUP_RESPONSE <enum_popup_response>`
      - -
-     - Response value from the popup window.
+     - Response value from the popup window
 
 **Return**
 

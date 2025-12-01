@@ -30,10 +30,10 @@ To end compliance control, use :ref:`release_compliance_ctrl <release_compliance
    * - fTargetStiffness
      - float[6]
      - ``[3000, 3000, 3000, 200, 200, 200]``
-     - Stiffness for XYZ (translation) and Rx/Ry/Rz (rotation). |br|
+     - **Stiffness for XYZ (translation) and Rx/Ry/Rz (rotation)** |br|
        Larger: stiffer (less compliant) |br|
        Smaller values: softer (more compliant) |br|
-       Units: **N/m** (translation) and **N·m/rad** (rotation).
+       Units: N/m (translation) and N·m/rad (rotation)
    * - eForceReference
      - :ref:`COORDINATE_SYSTEM <enum_coordinate_system>`
      - ``COORDINATE_SYSTEM_TOOL``

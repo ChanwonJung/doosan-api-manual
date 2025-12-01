@@ -26,14 +26,14 @@ is composed of the following fields when a program created through a typographic
      - ``_iLevel``
      - ``unsigned char``
      - 0~2
-     - Message level |br|
+     - **Message level** |br|
        0: Message, 1: Warning, 2: Alarm
 
    * - 257
      - ``_iBtnType``
      - ``unsigned char``
      - 0~1
-     - Button type |br|
+     - **Button type** |br|
        0: Resume & Stop, 1: OK
 
 Total size: 258 bytes

@@ -28,8 +28,8 @@ and stops the motion in the currently active section.
    * - iStopType
      - unsigned char
      - 1
-     - Stop type selection. |br|
-       0: Slow Stop, 1: Quick Stop
+     - Stop type selection |br|
+       (0: Slow Stop, 1: Quick Stop)
 
 **Return**
 

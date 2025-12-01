@@ -41,7 +41,7 @@ It is particularly useful for robots with multiple valid joint configurations fo
    * - iSolutionSpace
      - unsigned char
      - -
-     - Specifies the solution space index for inverse kinematics.  
+     - Specifies the solution space index for inverse kinematics. |br| 
        This determines which joint configuration is selected for reaching the same Cartesian target.
    * - fTargetVel
      - float

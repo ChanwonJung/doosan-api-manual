@@ -20,7 +20,7 @@ expressed as six floating-point values (X, Y, Z, RX, RY, RZ).
      - ``_iType``
      - ``unsigned char``
      - 0-2
-     - Coordinate mapping configuration: |br|
+     - **Coordinate mapping configuration**
        0: World → Base |br|
        1: Base → Reference |br| 
        2: World → Reference |br|

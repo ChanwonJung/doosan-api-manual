@@ -31,9 +31,9 @@ especially when the robot is not in continuous operation.
    * - bFuncEnable
      - bool
      - -
-     - Enables or disables the auto servo-off feature. |br|
-       - false (0): Disable auto servo-off  |br|
-       - true (1): Enable auto servo-off
+     - **Enables or disables the auto servo-off feature** |br|
+       false (0): Disable auto servo-off |br|
+       true (1): Enable auto servo-off
    * - fElapseTime
      - float
      - -

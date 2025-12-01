@@ -27,9 +27,9 @@ None
    * - **Value**
      - **Description**
    * - 0
-     - Fail — failed to turn off the LED.
+     - Fail — failed to turn off the LED
    * - 1
-     - Success — LED successfully turned off.
+     - Success — LED successfully turned off
 
 **Example**
 

@@ -28,9 +28,9 @@ None
    * - **Value**
      - **Description**
    * - 0
-     - Fail — LED reset request failed.
+     - Fail — LED reset request failed
    * - 1
-     - Success — LED successfully reset to default state.
+     - Success — LED successfully reset to default state
 
 **Example**
 

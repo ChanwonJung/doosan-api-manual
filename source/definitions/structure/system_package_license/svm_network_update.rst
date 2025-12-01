@@ -19,7 +19,8 @@ It includes network type selection, server IP address, and file name for the upd
      - ``_iNetType``
      - ``unsigned char``
      - 0 ~ 1
-     - Network type selection |br| 0: TFTP, 1: SAMBA
+     - **Network type selection** |br| 
+       0: TFTP, 1: SAMBA
    * - 1
      - ``_szIpAddress``
      - ``char[16]``

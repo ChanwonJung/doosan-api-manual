@@ -40,22 +40,22 @@ based on the target pose, velocity, acceleration, and interpolation time.
    * - fTargetPos
      - float[6]
      - -
-     - Target TCP position and orientation :math:`[x, y, z, Rx, Ry, Rz]` |br| 
-       (position in **mm**, rotation in **deg**, using Euler ZYX convention).
+     - Target TCP position and orientation [x, y, z, Rx, Ry, Rz] |br| 
+       (position in **mm**, rotation in **deg**, using Euler ZYX convention)
    * - fTargetVel
      - float[6]
      - -
-     - Target TCP velocity :math:`[mm/s, deg/s]`. |br|
-       If set to **-10000**, velocity is automatically calculated from ``fTargetPos``.
+     - Target TCP velocity [mm/s, deg/s] |br|
+       If set to **-10000**, velocity is automatically calculated from ``fTargetPos``
    * - fTargetAcc
      - float[6]
      - -
-     - Target TCP acceleration :math:`[mm/s², deg/s²]`. |br|
-       If set to **-10000**, acceleration is automatically computed.
+     - Target TCP acceleration [mm/s², deg/s²] |br|
+       If set to **-10000**, acceleration is automatically computed
    * - fTargetTime
      - float
      - -
-     - Target interpolation duration [s].
+     - Target interpolation duration [s]
 
 **Note**
 

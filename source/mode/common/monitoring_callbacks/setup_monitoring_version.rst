@@ -28,8 +28,8 @@ This function is only available in M2.5 version or higher.
    * - iVersion
      - int
      - -
-     - Version information. |br|
-       0: version 0, 1: version 1
+     - Version information |br|
+       (0: version 0, 1: version 1)
 
 **Return**
 

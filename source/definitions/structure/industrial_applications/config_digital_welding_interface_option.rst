@@ -23,7 +23,7 @@ to define the digital interface details.
      - ``_tOption1`` ~ ``_tOption15``
      - :ref:`CONFIG_DIGITAL_WELDING_IF_MAPPING_DATA <struct_CONFIG_DIGITAL_WELDING_IF_MAPPING_DATA>`
      - -
-     - User-defined digital welding options. |br|
+     - User-defined digital welding options |br|
        Each entry corresponds to one optional welding control signal, such as: |br|
        - Arc start/end delay setting |br|
        - Crater start/end delay setting

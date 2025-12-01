@@ -26,9 +26,9 @@ It allows mapping of up to **8 remote control functions** for both input and out
      - ``_tFunc[TYPE_LAST][NUM_REMOTE_CONTROL]``
      - :ref:`CONFIG_IO_FUNC <struct_CONFIG_IO_FUNC>` [2][8]
      - -
-     - I/O function mapping table for remote control signals. |br|
+     - I/O function mapping table for remote control signals |br|
        "TYPE_LAST = 2": Input/Output |br|
-       "NUM_REMOTE_CONTROL = 8": Up to 8 functions per type.
+       "NUM_REMOTE_CONTROL = 8": Up to 8 functions per type
 
 Total size: 33 bytes
 

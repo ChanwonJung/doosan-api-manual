@@ -19,13 +19,13 @@ and consists of the following fields.
      - ``_iIO[TYPE_LAST][NUM_SAFETY * 2]``
      - ``unsigned char[2][16]``
      - -
-     - Each subarray represents input/output and safety channel index.
+     - Each subarray represents input/output and safety channel index
    * - 32
      - ``_bLevel[TYPE_LAST][NUM_SAFETY]``
      - ``unsigned char[2][8]``
      - -
-     - Optional trigger-level configuration (commented out in header). |br|
-       Reserved for future firmware or hardware revisions.
+     - Optional trigger-level configuration (commented out in header) |br|
+       Reserved for future firmware or hardware revisions
 
 Total size: 48 bytes
 

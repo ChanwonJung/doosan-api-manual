@@ -12,7 +12,21 @@ In addition, this example shows how to control the execution flow of a DRL progr
 This example is located in the following path: |br|
 ``API-DRFL/example/Linux_64/3_minimal_motion_sample.cpp.``
 
-See the example on the `Doosan Robotics API-DRFL GitHub <https://github.com/DoosanRobotics/API-DRFL/blob/GL013300/example/Linux_64/3_send_drl_script_sample.cpp>`_.
+**See the example on the** `Doosan Robotics API-DRFL GitHub <https://github.com/DoosanRobotics/API-DRFL/blob/GL013300/example/Linux_64/3_send_drl_script_sample.cpp>`_.
+
+**Watch the full walk-through on the** `Doosan Robotics Official Youtube <https://www.youtube.com/watch?v=kygtqBipP7g>`_.
+
+.. raw:: html
+
+   <div style="text-align:center; margin: 1em 0;">
+     <iframe width="640" height="360"
+             src="https://www.youtube.com/embed/kygtqBipP7g"
+             title="Tutorial Video"
+             frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+             allowfullscreen>
+     </iframe>
+   </div>
 
 
 Setup & Connection

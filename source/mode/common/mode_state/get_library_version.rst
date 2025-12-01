@@ -23,7 +23,7 @@ None
    * - **Value**
      - **Description**
    * - Character String (Maximum 32 byte)
-     - Version information of the API (e.g., GL:010105)
+     - Version information of the API (e.g., GL013300)
 
 **Example**
 

@@ -19,16 +19,16 @@ allowing monitoring of DRL variables during execution.
      - ``_iDivision``
      - ``unsigned char``
      - 0 or 1
-     - Variable scope: |br|
+     - **Variable scope** |br|
        0: Installation variable |br|
        1: General variable
    * - 1
      - ``_iType``
      - ``unsigned char``
      - 0~6
-     - Variable data type |br|
-       0: Bool, 1: Int, 2: Float 3: String |br|
-       4: POSJ, 5: POSX, 6: Unknown
+     - **Variable data type** |br|
+       (0: Bool, 1: Int, 2: Float 3: String |br|
+       4: POSJ, 5: POSX, 6: Unknown)
    * - 2
      - ``_szName``
      - ``char[128]``

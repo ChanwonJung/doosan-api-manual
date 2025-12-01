@@ -20,7 +20,7 @@ It defines the data mapping for **test or diagnostic signals** transmitted from 
 This allows the robot to send diagnostic flags or calibration signals used for verifying communication and test cycles.
 
 You may include additional test signal configurations using optional structure fields such as ``ts_opt1`` and ``ts_opt2``.  
-Refer to the welder’s communication datasheet for detailed signal mapping and valid byte/bit assignments.
+Refer to the welder's communication datasheet for detailed signal mapping and valid byte/bit assignments.
 
 **Note**
 
@@ -76,7 +76,7 @@ The following fields define the bit-level mapping for each EtherNet/IP test sign
      - unsigned char
      - None
      - Data digit position |br|
-       (1:0, 0.1: 1, 0.01: 2)
+       (1: 0, 0.1: 1, 0.01: 2)
    * - _fMinData
      - float
      - None

@@ -19,19 +19,19 @@ indicating whether the robot's position is within or outside each defined virtua
      - ``_iCubeResult``
      - ``unsigned char[6]``
      - 0 or 1
-     - Result flags for up to **6 cube-shaped fences**. |br|
+     - Result flags for up to **6 cube-shaped fences** |br|
        0: Inside boundary, 1: Outside boundary
    * - 6
      - ``_iPolyResult``
      - ``unsigned char[6]``
      - 0 or 1
-     - Result flags for up to **6 polygon-shaped fences**. |br|
+     - Result flags for up to **6 polygon-shaped fences** |br|
        0: Inside boundary, 1: Outside boundary
    * - 12
      - ``_iCylinderResult``
      - ``unsigned char``
      - 0 or 1
-     - Result flag for **cylinder-shaped fence**. |br|
+     - Result flag for **cylinder-shaped fence** |br|
        0: Inside, 1: Outside
 
 Total size: 13 bytes

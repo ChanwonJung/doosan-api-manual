@@ -21,7 +21,7 @@ It defines the communication signals related to **welding mode selection**, tran
 Through this interface, the robot can command welding mode changes such as process type or welding program number, ensuring that the robot and welder remain synchronized.
 
 You may add additional welding mode selection signals through the optional parameter field ``wm_opt1`` within the structure.  
-Refer to the welder manufacturer’s EtherNet/IP signal documentation for detailed mode mapping.
+Refer to the welder manufacturer's EtherNet/IP signal documentation for detailed mode mapping.
 
 **Note**
 
@@ -67,7 +67,7 @@ The configuration structure defines the data mapping parameters for each EtherNe
      - unsigned char
      - None
      - Enable flag |br|
-       (0 = Disabled, 1 = Enabled)
+       (0: Disabled, 1: Enabled)
    * - _bDataType
      - unsigned char
      - None

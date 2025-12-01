@@ -41,7 +41,7 @@ it is recommended to register them within the Workcell configuration for long-te
    * - fTargetPos
      - float[3][6]
      - -
-     - Three target task positions defining the plane of the new user coordinate: |br|
+     - Three target task positions defining the plane of the new user coordinate |br|
        - Pose #1: reference start point  |br|
        - Pose #2: defines X-axis direction  |br|
        - Pose #3: defines the plane for Z-axis orientation |br|

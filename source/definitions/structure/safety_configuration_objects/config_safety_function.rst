@@ -29,13 +29,22 @@ It is implemented as a **union**, allowing two different views of the same memor
      - ``_iStopCode[SAFETY_FUNC_LAST]``
      - ``unsigned char``
      - -
-     - Raw 1-byte stop function value per item. |br|
+     - Raw 1-byte stop function value per item |br|
        Overlays the same memory as ``_tStopCode`` via union mapping. |br| |br|
        
-       (SF05: Emergency Stop, SF06: Protective Stop, SF07: Standstill Monitoring |br| 
-       SF08: Joint Angle Monitoring, SF09: Joint Speed Monitoring, SF10: Joint Torque Monitoring |br|
-       SF11: Collision Detection, SF12: TCP Position Monitoring, SF13: TCP Orientation Monitoring |br| 
-       SF14: TCP Speed Monitoring, SF15: TCP Force Monitoring, SF16: Momentum Monitoring, SF17: Power Monitoring)    
+       - SF05: Emergency Stop
+       - SF06: Protective Stop
+       - SF07: Standstill Monitoring 
+       - SF08: Joint Angle Monitoring
+       - SF09: Joint Speed Monitoring
+       - SF10: Joint Torque Monitoring
+       - SF11: Collision Detection
+       - SF12: TCP Position Monitoring
+       - SF13: TCP Orientation Monitoring
+       - SF14: TCP Speed Monitoring
+       - SF15: TCP Force Monitoring
+       - SF16: Momentum Monitoring
+       - SF17: Power Monitoring
 
 Total size: 34 bytes
 

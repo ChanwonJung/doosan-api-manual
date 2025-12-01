@@ -20,7 +20,7 @@ It specifies whether the license key is stored inside the controller and contain
      - ``unsigned char``
      - 0 or 1
      - Indicates whether the license key is stored in the controller |br|  
-       0: external key, 1: internal key
+       (0: external key, 1: internal key)
    * - 1
      - ``_szLicenseKey``
      - ``unsigned char[48]``

@@ -20,17 +20,20 @@ on orthogonal planes (XY, YZ, or ZX).
      - ``_iMotionType``
      - ``unsigned char``
      - 0~2
-     - Target motion axis (0: X, 1: Y, 2: Z)
+     - Target motion axis |br| 
+       (0: X, 1: Y, 2: Z)
    * - 1
      - ``_iPlaneType``
      - ``unsigned char``
      - 0~2
-     - Plane selection (0: XY, 1: YZ, 2: ZX)
+     - Plane selection |br| 
+       (0: XY, 1: YZ, 2: ZX)
    * - 2
      - ``_iTargetRef``
      - ``unsigned char``
      - 0~1
-     - Reference coordinate (0: Base, 1: Tool)
+     - Reference coordinate |br| 
+       (0: Base, 1: Tool)
    * - 3
      - ``_fTargetAcc``
      - ``float``

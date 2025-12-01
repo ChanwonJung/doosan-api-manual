@@ -20,13 +20,13 @@ It is used to configure short-duration spot welds for joining or positioning com
      - ``_bEnable``
      - ``unsigned char``
      - 0 or 1
-     - **Tack welding activation flag** |br|
+     - Tack welding activation flag |br|
        (0: Deactivated, 1: Activated)
    * - 1
      - ``_bWeldingType``
      - ``unsigned char``
      - 0 or 1
-     - **Welding signal type** |br|
+     - Welding signal type |br|
        (0: Analog, 1: Digital)
 
 Total size: 2 bytes
