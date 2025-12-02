@@ -21,7 +21,7 @@
 
        - Added missing Structures
        - Added DH paramter Structure: ``ROBOT_LINK_INFO``
-     - 2025.12.02
+     - 2025-12-02
    * - 1.33.0
      - Update API Manual to Sphinx Theme |br| |br|
 
@@ -33,7 +33,7 @@
        - Added Tutorial (Chapter 6)
        - Added TroubleShooting (Chapter 7)
        - Restructing of the API navigation tree
-     - 2025.12.02       
+     - 2025-12-02       
    * - 1.33
      - Modify version information: GL013300 |br| |br|
        **Update Features**
