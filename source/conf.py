@@ -34,7 +34,7 @@ def _get_origin_branches():
     repo_root = os.path.dirname(__file__)
     try:
         out = subprocess.check_output(
-            ["git", "for-each-ref", "--format=%(refname:short)", "refs/remote/origin"],
+            ["git", "for-each-ref", "--format=%(refname:short)", "refs/remotes/origin"],
             cwd=repo_root,
             text=True,
         )
