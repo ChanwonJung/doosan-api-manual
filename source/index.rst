@@ -5,7 +5,7 @@ Doosan Robotics API Manual
 
 .. raw:: html
 
-    <div class="version-badge">Version: GL013300</div>
+    <div class="version-badge">API Version: GL013300</div>
 
 .. image:: tutorials/images/etc/DRFL_logo.png
    :alt: drfl_logo
