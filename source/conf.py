@@ -34,7 +34,7 @@ def _get_origin_branches():
     repo_root = os.path.dirname(__file__)
     try:
         out = subprocess.check_output(
-            ["git", "for-each-ref", "--format=%(refname:short)", "refs/heads"],
+            ["git", "for-each-ref", "--format=%(refname:short)", "refs/remote/origin"],
             cwd=repo_root,
             text=True,
         )
@@ -47,13 +47,16 @@ def _get_origin_branches():
         if not ref:
             continue
 
-        # Convert "origin/GL013301" → "GL013301"
-        parts = ref.split("/", 1)
-        name = parts[1] if len(parts) == 2 else parts[0]
+        # ref looks like "origin/GL013301" → keep only "GL013301"
+        if ref.startswith("origin/"):
+            name = ref.split("/", 1)[1]
+        else:
+            name = ref
 
         branches.append(name)
 
-    return branches
+    gl_branches = [b for b in branches if b.startswith("GL")]
+    return gl_branches or branches
 
 def _detect_latest_version(branches):
     """
@@ -105,6 +108,7 @@ def _build_smv_branch_whitelist():
 
 # Override whitelist dynamically
 smv_branch_whitelist = _build_smv_branch_whitelist()
+smv_remote_whitelist = r"^origin$"
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', '_site', 'Thumbs.db', '.DS_Store']
