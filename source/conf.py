@@ -148,3 +148,17 @@ html_theme_options = {
     'navigation_depth': 4,
     'titles_only': False,
 }
+
+# --- Version label mapping for UI (branch name -> display label) -----------
+
+version_label_map = {
+    "GL013300": "1.33.0",
+    "GL013301": "1.33.1",
+}
+
+try:
+    html_context
+except NameError:
+    html_context = {}
+
+html_context["version_label_map"] = version_label_map
