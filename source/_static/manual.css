@@ -80,3 +80,16 @@
     text-overflow: clip !important;
     overflow-wrap: anywhere !important; /* Break long words if necessary */
 }
+
+/* Version badge placed at top-right, aligned with the main title */
+.version-badge {
+    float: right;
+    margin-top: -40px;   /* adjust for perfect vertical alignment */
+    padding: 6px 12px;
+    background: #e8f0ff;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #003c8f;
+    font-size: 15px;
+    border: 1px solid #d0d8e8;
+}
