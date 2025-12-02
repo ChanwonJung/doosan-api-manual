@@ -1,15 +1,24 @@
 {% extends "!page.html" %}
 
 {% block body %}
-{% if current_version and latest_version and current_version != latest_version %}
-  <div class="version-warning">
-    <strong>
-      You're reading the documentation for an older, but still supported.
-      For information on the latest version, please have a look at
-      <a href="{{ vpathto(latest_version.name) }}">{{ latest_version.name }}</a>.
-    </strong>
-  </div>
-{% endif %}
 
-{{ super() }}
+  {% if versions and versions.branches %}
+    {% set sorted = versions.branches|sort(attribute='name')|list %}
+    {% set latest = sorted[-1] %}
+  {% else %}
+    {% set latest = none %}
+  {% endif %}
+
+  {% if current_version and latest and current_version.name != latest.name %}
+    <div class="version-warning">
+      <strong>
+        You're reading the documentation for an older, but still supported version
+        ({{ current_version.name }}).<br>
+        For information on the latest version, please have a look at
+        <a href="{{ latest.url }}">{{ latest.name }}</a>.
+      </strong>
+    </div>
+  {% endif %}
+
+  {{ super() }}
 {% endblock %}
