@@ -1,15 +1,15 @@
 .. Doosan Robotics API Manual:
 
-Doosan Robotics API Manual documentation
-=============================================
+Doosan Robotics API Manual
+===============================
 
 .. raw:: html
 
    <div style="margin-top: 10px; margin-bottom: 20px;
                padding: 8px 14px; width: fit-content;
                border-radius: 6px; background: #e8f0ff;
-               font-size: 17px; font-weight: 600;
-               color: #003c8f;">
+               font-size: 15px; font-weight: 600;
+               color: #000000ff;">
        Version: GL013300
    </div>
 
