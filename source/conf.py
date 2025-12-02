@@ -28,19 +28,18 @@ import os
 import re
 import subprocess
 
-def _build_smv_branch_whitelist():
-    repo_root = os.path.dirname(__file__)
+LATEST_VERSION = None
 
+def _get_origin_branches():
+    repo_root = os.path.dirname(__file__)
     try:
-        # List ALL origin branches
         out = subprocess.check_output(
             ["git", "for-each-ref", "--format=%(refname:short)", "refs/remotes/origin"],
             cwd=repo_root,
             text=True,
         )
     except Exception:
-        # If git unavailable, fallback to GL013301 only
-        return r"^(GL013301)$"
+        return []
 
     branches = []
     for line in out.splitlines():
@@ -48,15 +47,58 @@ def _build_smv_branch_whitelist():
         if not ref:
             continue
 
-        # "origin/GL013301" -> "GL013301"
+        # Convert "origin/GL013301" → "GL013301"
         parts = ref.split("/", 1)
         name = parts[1] if len(parts) == 2 else parts[0]
 
         branches.append(name)
 
-    if not branches:
-        return r"^(GL013301)$"
+    return branches
 
+def _detect_latest_version(branches):
+    """
+    Detects the highest GL version based on numeric suffix.
+    Example:
+        branches = ["GL013300", "GL013301"]
+        → returns "GL013301"
+    """
+    pattern = re.compile(r"^GL(\d+)$")
+    candidates = []
+
+    for name in branches:
+        m = pattern.match(name)
+        if m:
+            num = int(m.group(1))
+            candidates.append((num, name))
+
+    if not candidates:
+        return None
+
+    candidates.sort()
+    return candidates[-1][1]   # return highest-numbered GL branch
+
+def _build_smv_branch_whitelist():
+
+    global LATEST_VERSION
+    branches = _get_origin_branches()
+
+    # detect latest GL version automatically
+    detected = _detect_latest_version(branches)
+    if detected:
+        LATEST_VERSION = detected
+    else:
+        # If no GL pattern exists:
+        if branches:
+            LATEST_VERSION = branches[0]
+        else:
+            # Emergency fallback when no git branch info available
+            LATEST_VERSION = "GL013301"
+
+    # If no branches found → allow only the detected latest version
+    if not branches:
+        return rf"^({re.escape(LATEST_VERSION)})$"
+
+    # Allow ALL branches dynamically
     escaped = [re.escape(b) for b in branches]
     regex = r"^(" + "|".join(escaped) + r")$"
     return regex

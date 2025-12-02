@@ -17,6 +17,35 @@ if ! python3 -m sphinx_multiversion --help >/dev/null 2>&1; then
   exit 1
 fi
 
+detect_latest_version() {
+  # List origin/* branches
+  branches=$(git for-each-ref --format="%(refname:short)" refs/remotes/origin | sed 's|origin/||')
+
+  latest=""
+  maxnum=0
+
+  for b in $branches; do
+    if [[ $b =~ ^GL([0-9]+)$ ]]; then
+      num="${BASH_REMATCH[1]}"
+      if (( num > maxnum )); then
+        maxnum=$num
+        latest="$b"
+      fi
+    fi
+  done
+
+  # If no GL pattern found → default fallback
+  if [[ -z "$latest" ]]; then
+    latest="GL013301"   # fallback
+  fi
+
+  echo "$latest"
+}
+
+LATEST_VERSION=$(detect_latest_version)
+
+echo "[*] Latest detected version = $LATEST_VERSION"
+
 # Clean previous build
 echo "[*] Cleaning previous build..."
 rm -rf "${OUT_DIR}"
@@ -27,11 +56,12 @@ python3 -m sphinx_multiversion "${SRC_DIR}" "${OUT_DIR}"
 
 # Serve documentation
 cd "${OUT_DIR}"
-URL="http://localhost:${PORT}/GL013301/index.html"
+URL="http://localhost:${PORT}/${LATEST_VERSION}/index.html"
 
 echo ""
 echo "=============================================="
 echo " Serving documentation at ${URL}"
+echo " Latest version: ${LATEST_VERSION}"
 echo " Directory: ${OUT_DIR}"
 echo " Press Ctrl+C to stop the server."
 echo "=============================================="
