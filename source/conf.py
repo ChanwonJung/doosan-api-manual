@@ -29,10 +29,6 @@ import re
 import subprocess
 
 def _build_smv_branch_whitelist():
-    """
-    Dynamically include ALL branches detected by git.
-    No filtering.
-    """
     repo_root = os.path.dirname(__file__)
 
     try:
