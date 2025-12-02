@@ -10,17 +10,8 @@
      - **Revision Date**
 
    * - 1.33.1
-     - Update API Manual to Sphinx Theme |br| |br|
-
-       Modify version information: GL013301 |br| |br|
-
-       **Update Features**
-
-       - Support for Ubuntu 24.04 Version
-       - Added Tutorial (Chapter 6)
-       - Added TroubleShooting (Chapter 7)
-       - Restructing of the API navigation tree
-
+     - Modify version information: GL013301 |br| |br|
+       
        **Updated Functions**
        
        - Added missing functions
@@ -30,7 +21,19 @@
 
        - Added missing Structures
        - Added DH paramter Structure: ``ROBOT_LINK_INFO``
-     - 2025.12.01
+     - 2025.12.02
+   * - 1.33.0
+     - Update API Manual to Sphinx Theme |br| |br|
+
+       Modify version information: GL013300 |br| |br|
+
+       **Update Features**
+
+       - Support for Ubuntu 24.04 Version
+       - Added Tutorial (Chapter 6)
+       - Added TroubleShooting (Chapter 7)
+       - Restructing of the API navigation tree
+     - 2025.12.02       
    * - 1.33
      - Modify version information: GL013300 |br| |br|
        **Update Features**
