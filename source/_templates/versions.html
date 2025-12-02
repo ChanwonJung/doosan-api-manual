@@ -2,6 +2,9 @@
 
 {% set show_switcher = (versions and (versions.branches or versions.tags)) %}
 {% if show_switcher %}
+
+  {% set labels = version_label_map if version_label_map is defined else {} %}
+
   <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
       <span class="fa fa-book"></span>
@@ -22,6 +25,7 @@
       <dl>
         <dt>{{ _('Versions') }}</dt>
         {% for v in items %}
+          {% set label = labels.get(v.name, v.name) %}
           <dd>
             {% if current_version and v.name == current_version.name %}
               <strong class="rst-current-item">{{ v.name }}</strong>
