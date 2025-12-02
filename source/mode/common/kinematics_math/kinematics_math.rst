@@ -17,5 +17,4 @@
    get_solution_space
    coord_transform
    calc_coord
-   get_robot_link_info
    set_singularity_handling

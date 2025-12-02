@@ -2,7 +2,7 @@
 
 get_solution_space
 ------------------------------------------
-This function calculates the **solution space index (0–7)** for a given joint position.  
+This function calculates the **solution space index (0-7)** for a given joint position.  
 Each solution space represents one of the eight possible robot configurations  
 (elbow-up/down, wrist-flip, shoulder combinations, etc.).  
 The result is primarily used when performing **inverse kinematics** via :ref:`ikin <ikin>`.
@@ -31,7 +31,7 @@ The result is primarily used when performing **inverse kinematics** via :ref:`ik
    * - fTargetPos
      - float[6]
      - -
-     - Target joint positions (J1–J6). |br|
+     - Target joint positions (J1-J6). |br|
        The function evaluates these angles to determine the corresponding IK configuration space.
 
 **Return**
@@ -42,7 +42,7 @@ The result is primarily used when performing **inverse kinematics** via :ref:`ik
 
    * - **Value**
      - **Description**
-   * - unsigned char (0–7)
+   * - unsigned char (0-7)
      - Identifier of the **solution space** that the current pose belongs to. |br| 
        Used as input to :ref:`ikin <ikin>` or :ref:`ikin_extension <ikin_extension>`.
 

@@ -35,7 +35,7 @@ This function returns the joint position corresponding iSolutionSpace, which is 
    * - iSolutionSpace
      - unsigned char
      - -
-     - Solution space index (0–7) selecting one of eight IK configurations.
+     - Solution space index (0-7) selecting one of eight IK configurations.
    * - eTargetRef
      - :ref:`COORDINATE_SYSTEM <enum_coordinate_system>`
      - COORDINATE_SYSTEM_BASE

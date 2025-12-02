@@ -2,8 +2,8 @@
 
 set_singularity_handling
 ------------------------------------------
-This function configures the robot’s **response policy for handling singularities** during task motion.  
-A singularity occurs when the robot’s Jacobian matrix becomes ill-conditioned,  
+This function configures the robot's **response policy for handling singularities** during task motion.  
+A singularity occurs when the robot's Jacobian matrix becomes ill-conditioned,  
 causing instability or loss of path accuracy.  
 
 Users can choose among different avoidance strategies to define how the controller reacts  

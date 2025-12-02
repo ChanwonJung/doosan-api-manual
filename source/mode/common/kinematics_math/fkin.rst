@@ -3,7 +3,7 @@
 fkin (forward kinematics)
 ------------------------------------------
 This function computes the **TCP pose (Task Space Position and Orientation)**  
-from the given **joint angles** in the robot’s kinematic chain.  
+from the given **joint angles** in the robot's kinematic chain.  
 It is the inverse operation of :ref:`ikin <ikin>`, converting joint values to Cartesian coordinates.
 
 **Definition** |br|

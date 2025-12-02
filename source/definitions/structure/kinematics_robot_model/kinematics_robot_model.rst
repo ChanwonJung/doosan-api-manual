@@ -1,6 +1,6 @@
 .. _pose_wrenches:
 
-2.3.5 Kinematics & Robot Model (Pose / Wrenches / Positions / Link Info)
+2.3.5 Kinematics & Robot Model (Pose / Wrenches / Positions)
 ================================================================================
 
 .. toctree::
@@ -24,4 +24,3 @@
    counter_balance_param_data
    calibration_param_data
    gravity_param_data
-   robot_link_info

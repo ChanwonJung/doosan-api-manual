@@ -38,7 +38,7 @@ compared to the standard `ikin()` function.
    * - iSolutionSpace
      - unsigned char
      - -
-     - Solution space index (0–7). |br|
+     - Solution space index (0-7). |br|
        Selects one of eight inverse-kinematics configurations.
    * - eTargetRef
      - :ref:`COORDINATE_SYSTEM <enum_coordinate_system>`

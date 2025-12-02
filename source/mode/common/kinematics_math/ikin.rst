@@ -35,7 +35,7 @@ in the joint space and returns the TCP (objects in the task space) based on the 
    * - iSolutionSpace
      - unsigned char
      - -
-     - Solution space index (0–7). |br|
+     - Solution space index (0-7). |br|
        Indicates which inverse kinematics configuration to use (e.g., elbow up/down, wrist flip, etc.).
    * - eTargetRef
      - :ref:`COORDINATE_SYSTEM <enum_coordinate_system>`

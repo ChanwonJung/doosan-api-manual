@@ -38,7 +38,7 @@ ensuring consistent solutions across different configurations.
    * - iSolutionSpace
      - unsigned char
      - -
-     - Solution space index (0–7) selecting one of eight valid IK configurations.
+     - Solution space index (0-7) selecting one of eight valid IK configurations.
    * - eTargetRef
      - :ref:`COORDINATE_SYSTEM <enum_coordinate_system>`
      - COORDINATE_SYSTEM_BASE
