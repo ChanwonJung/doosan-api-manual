@@ -1,4 +1,5 @@
 name: Build & Deploy Sphinx Docs
+
 on:
   push:
     branches: [ GL013301 ]
@@ -41,6 +42,26 @@ jobs:
       - name: Build with sphinx-multiversion
         run: |
           python -m sphinx_multiversion source _site
+
+      - name: Create landing page (redirect to GL013301)
+        run: |
+          mkdir -p _site
+          cat > _site/index.html <<'EOF'
+          <!doctype html>
+          <meta charset="utf-8">
+          <meta http-equiv="refresh" content="0; url=/doosan-robotics-api-manual/GL013301/">
+          <link rel="canonical" href="/doosan-robotics-api-manual/GL013301/">
+          <title>Redirecting…</title>
+          <p>Redirecting to <a href="/doosan-robotics-api-manual/GL013301/">GL013301 docs</a>…</p>
+          EOF
+
+      - name: Ensure .nojekyll
+        run: |
+          touch _site/.nojekyll
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -53,5 +74,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - id: deployment
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
