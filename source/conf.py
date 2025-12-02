@@ -9,8 +9,8 @@
 project = 'Doosan Robotics API Manual'
 copyright = '2025, Doosan Robotics'
 author = 'Doosan Robotics'
-version = '1.33.1'
-release = '1.33.1'
+version = '1.33.0'
+release = '1.33.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -28,34 +28,77 @@ import os
 import re
 import subprocess
 
-def _build_smv_branch_whitelist():
-    """
-    Dynamically include ALL branches detected by git.
-    No filtering.
-    """
-    repo_root = os.path.dirname(__file__)
+LATEST_VERSION = None
 
+def _get_origin_branches():
+    repo_root = os.path.dirname(__file__)
     try:
-        # List ALL local branches
         out = subprocess.check_output(
-            ["git", "branch", "--format", "%(refname:short)"],
+            ["git", "for-each-ref", "--format=%(refname:short)", "refs/remotes/origin"],
             cwd=repo_root,
             text=True,
         )
     except Exception:
-        # If git unavailable (CI with shallow clone), fallback to main only
-        return r"^(main)$"
+        return []
 
     branches = []
     for line in out.splitlines():
-        name = line.strip()
-        if not name:
+        ref = line.strip()
+        if not ref:
             continue
-        branches.append(name)   # include EVERYTHING
 
+        # Convert "origin/GL013301" → "GL013301"
+        parts = ref.split("/", 1)
+        name = parts[1] if len(parts) == 2 else parts[0]
+
+        branches.append(name)
+
+    return branches
+
+def _detect_latest_version(branches):
+    """
+    Detects the highest GL version based on numeric suffix.
+    Example:
+        branches = ["GL013300", "GL013301"]
+        → returns "GL013301"
+    """
+    pattern = re.compile(r"^GL(\d+)$")
+    candidates = []
+
+    for name in branches:
+        m = pattern.match(name)
+        if m:
+            num = int(m.group(1))
+            candidates.append((num, name))
+
+    if not candidates:
+        return None
+
+    candidates.sort()
+    return candidates[-1][1]   # return highest-numbered GL branch
+
+def _build_smv_branch_whitelist():
+
+    global LATEST_VERSION
+    branches = _get_origin_branches()
+
+    # detect latest GL version automatically
+    detected = _detect_latest_version(branches)
+    if detected:
+        LATEST_VERSION = detected
+    else:
+        # If no GL pattern exists:
+        if branches:
+            LATEST_VERSION = branches[0]
+        else:
+            # Emergency fallback when no git branch info available
+            LATEST_VERSION = "GL013300"
+
+    # If no branches found → allow only the detected latest version
     if not branches:
-        return r"^(main)$"
+        return rf"^({re.escape(LATEST_VERSION)})$"
 
+    # Allow ALL branches dynamically
     escaped = [re.escape(b) for b in branches]
     regex = r"^(" + "|".join(escaped) + r")$"
     return regex
@@ -82,7 +125,7 @@ html_static_path = ['_static']
 html_css_files = ['manual.css']
 
 # Change doc title
-html_title = 'Doosan Robotics API Manual Guide v1.33.1'
+html_title = 'Doosan Robotics API Manual Guide v1.33.0'
 html_logo = 'tutorials/images/etc/Doosan_logo.png' # logo
 # html_favicon = '_static/favicon.ico'
 
