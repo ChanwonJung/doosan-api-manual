@@ -1,7 +1,7 @@
 name: Build & Deploy Sphinx Docs
 on:
   push:
-    branches: [ main ]
+    branches: [ GL013301 ]
   workflow_dispatch:
 
 permissions:

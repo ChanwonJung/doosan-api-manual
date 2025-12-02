@@ -1,4 +1,5 @@
 {# _templates/versions.html #}
+
 {% set show_switcher = (versions and (versions.branches or versions.tags)) %}
 {% if show_switcher %}
   <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
@@ -9,27 +10,29 @@
     </span>
 
     <div class="rst-other-versions">
-      <!-- {% set allowed = ['main', 'GL013301'] %} -->
-      {% set items = [] %}
-      {% for b in versions.branches %}
-        {% if b.name in allowed %}
-          {% set _ = items.append(b) %}
-        {% endif %}
-      {% endfor %}
-
-      {% set items = items|sort(attribute='name') %}
-      <!-- {% set items = (items|selectattr('name','equalto','GL013301')|list) + (items|rejectattr('name','equalto','GL013301')|list) %} -->
+      {% set items = versions.branches|sort(attribute='name')|list %}
+      {% if current_version %}
+        {% set items =
+          (items|selectattr('name','equalto',current_version.name)|list)
+          + (items|rejectattr('name','equalto',current_version.name)|list)
+        %}
+      {% endif %}
 
       {% if items %}
       <dl>
         <dt>{{ _('Versions') }}</dt>
         {% for v in items %}
           <dd>
-            <a href="{{ v.url }}">{{ v.name }}</a>
+            {% if current_version and v.name == current_version.name %}
+              <strong class="rst-current-item">{{ v.name }}</strong>
+            {% else %}
+              <a href="{{ v.url }}">{{ v.name }}</a>
+            {% endif %}
           </dd>
         {% endfor %}
       </dl>
       {% endif %}
+      
     </div>
   </div>
 {% endif %}

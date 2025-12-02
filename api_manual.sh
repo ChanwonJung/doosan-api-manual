@@ -27,7 +27,7 @@ python3 -m sphinx_multiversion "${SRC_DIR}" "${OUT_DIR}"
 
 # Serve documentation
 cd "${OUT_DIR}"
-URL="http://localhost:${PORT}/main/index.html"
+URL="http://localhost:${PORT}/GL013301/index.html"
 
 echo ""
 echo "=============================================="

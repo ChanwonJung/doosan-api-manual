@@ -36,25 +36,30 @@ def _build_smv_branch_whitelist():
     repo_root = os.path.dirname(__file__)
 
     try:
-        # List ALL local branches
+        # List ALL origin branches
         out = subprocess.check_output(
-            ["git", "branch", "--format", "%(refname:short)"],
+            ["git", "for-each-ref", "--format=%(refname:short)", "refs/remotes/origin"],
             cwd=repo_root,
             text=True,
         )
     except Exception:
-        # If git unavailable (CI with shallow clone), fallback to main only
-        return r"^(main)$"
+        # If git unavailable, fallback to GL013301 only
+        return r"^(GL013301)$"
 
     branches = []
     for line in out.splitlines():
-        name = line.strip()
-        if not name:
+        ref = line.strip()
+        if not ref:
             continue
-        branches.append(name)   # include EVERYTHING
+
+        # "origin/GL013301" -> "GL013301"
+        parts = ref.split("/", 1)
+        name = parts[1] if len(parts) == 2 else parts[0]
+
+        branches.append(name)
 
     if not branches:
-        return r"^(main)$"
+        return r"^(GL013301)$"
 
     escaped = [re.escape(b) for b in branches]
     regex = r"^(" + "|".join(escaped) + r")$"
