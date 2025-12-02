@@ -3,6 +3,10 @@
 Doosan Robotics API Manual
 =================================
 
+.. raw:: html
+
+    <div class="version-badge">Version: GL013301</div>
+
 .. image:: tutorials/images/etc/DRFL_logo.png
    :alt: drfl_logo
    :width: 60%
