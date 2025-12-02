@@ -8,7 +8,11 @@
   <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
       <span class="fa fa-book"></span>
-      {{ current_version.name if current_version else 'unknown' }}
+      {% if current_version %}
+        {{ labels.get(current_version.name, current_version.name) }}
+      {% else %}
+        unknown
+      {% endif %}
       <span class="fa fa-caret-down"></span>
     </span>
 
@@ -28,15 +32,14 @@
           {% set label = labels.get(v.name, v.name) %}
           <dd>
             {% if current_version and v.name == current_version.name %}
-              <strong class="rst-current-item">{{ v.name }}</strong>
+              <strong class="rst-current-item">{{ label }}</strong>
             {% else %}
-              <a href="{{ v.url }}">{{ v.name }}</a>
+              <a href="{{ v.url }}">{{ label }}</a>
             {% endif %}
           </dd>
         {% endfor %}
       </dl>
       {% endif %}
-      
     </div>
   </div>
 {% endif %}
